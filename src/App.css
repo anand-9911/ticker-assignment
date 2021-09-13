@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* TICKER */
+
+.main-ticker {
+  margin: 10px;
+  height: 84px;
+  width: 247px;
+  padding: 10px;
+  border: 1px solid #fec9c9;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-items {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.ticker-items > div {
+  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  box-shadow: 0 0 0 1px black;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  background-image: url(https://static.bitfinex.com/images/icons/BTC-alt.svg);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  display: block;
+}
+
+.order-book {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
